@@ -25,7 +25,6 @@ app_stop() = begin
   global app
   app = PyNULL()
 end
-#%%
 send_msg(user="me", text="Hi") = @sync begin
   app_start()
   @time @async app.send_message(user, text)

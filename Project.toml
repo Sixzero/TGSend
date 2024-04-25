@@ -1,4 +1,4 @@
-name = "SendTG"
+name = "TGSend"
 uuid = "ac362c14-0e97-4b31-a8f6-b8b83d59688e"
 authors = ["SixZero <havliktomi@hotmail.com>"]
 version = "0.1.0"
