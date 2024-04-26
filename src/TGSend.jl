@@ -1,4 +1,4 @@
-module SendTG
+module TGSend
 using PyCall
 
 export send_msg, send_doc
@@ -54,4 +54,4 @@ function get_dialogs()
   # app_stop()
   res
 end
-end # module SendTG
+end # module TGSend

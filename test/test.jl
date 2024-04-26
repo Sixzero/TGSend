@@ -1,13 +1,13 @@
-using SendTG: app, send_msg
+using TGSend: app, send_msg
 @show app
 send_msg()
 @show app
 
 #%%
-using SendTG: app_start
+using TGSend: app_start
 app = app_start()
 #%%
-using SendTG: get_dialogs
+using TGSend: get_dialogs
 d = @async get_dialogs()
 @show d
 @show fetch(d)
