@@ -28,15 +28,14 @@ end
 send_msg(user="me", text="Hi") = @sync begin
   app_start()
   @time @async app.send_message(user, text)
-  app_stop()
+  # app_stop()
 end
 send_doc(user, filepath) = @sync begin
   app_start()
   @time @async app.send_document(user, filepath)
-  app_stop()
+  # app_stop()
 end
 function __init__()
-  app_start()
   py"""
   async def get_dialogs_py(app):
     print("OK GOT CALLED")
